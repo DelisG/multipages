@@ -8,8 +8,8 @@
     <title>Lanchonete</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-        crossorigin="anonymous"></script>
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+    </script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 </head>
@@ -21,41 +21,49 @@
         </nav>
     </header>
     <main>
-        <section class=" bg-dark">
+        <form class="form bg-dark">
             <div class="row">
-                <div class="col-4">
+                <div class="col-2">
                 </div>
                 <div class="col-4">
                     <div class="m-3">
-                        <div class="card" style="width: 18rem;">
-                            <div class="card-body">
-                                <h1 class="card-title text-warning">Bem vindos!</h1> <br>
-                                    <h6 class="card-title">Faça seu pedido conosco!</h6>
-                                    <select class="form-select" aria-label="Default select example">
-                                        <option selected>Open this select menu</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
-                                      </select>
-                                    <input class="card-text form-control" type="number" id="n1" name="n1"
-                                        placeholder="00.00" /> <br>
-                                    <h6 class="card-title">Informe sua altura (metro e cm)</h6>
-                                    <input class="card-text form-control" type="number" id="n2" name="n2"
-                                        placeholder="0.00" />
-                                    <button class="btn btn-warning" onclick="imc()">Finalizar pedido</button>
-                                    <button class="btn btn-warning" onclick="limpar()">Cancelar</button>
-                                    <h2 id="resultado"></h2>
+                        <div class="card" style="width: 37rem; font-size: 20px;">
+                            <div class="card-body row">
+                                <h1 class="card-title text-warning ">Bem vindos!</h1>
+                                <!-- BEBIDAS -->
+                                <div class="col-6 ">
+                                    <div></div>
+                                    <div>
+                                        <h4 class="card-title">Bebidas</h4>
+                                        <span class="card-title sombreamento">Refrigerante 250 ml</span>
+                                        <span class="card-title sombreamento">R$ 4,00</span>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <h4 class="card-title">quantidade</h4>
+                                    <input size="1" id="r250" name="n2" size="2" />
+                                </div>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Selecione forma de Pagamento</option>
+                                    <option value="dinheiro">Dinheiro</option>
+                                    <option value="pix">Pix</option>
+                                    <option value="cartao">Cartão</option>
+                                </select>
+                                <input class="card-text form-control" type="number" id="n1" name="n1"
+                                    placeholder="00.00" /> <br>
+                                <button class="btn btn-warning" onclick="imc()">Finalizar pedido</button>
+                                <button class="btn btn-warning" onclick="limpar()">Cancelar</button>
+                                <h2 id="resultado"></h2>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
-
-                </div>
+                <div class="col-4"></div>
+                <div class="col-2"></div>
             </div>
 
 
-        </section>
+        </form>
         <script>
             function imc() {
                 let peso = parseFloat(document.getElementById("n1").value);
@@ -63,24 +71,25 @@
                 let resultado = peso / (altura * altura);
                 let status;
 
-                if(resultado < 18.5){
+                if (resultado < 18.5) {
                     status = "A baixo do Peso";
-                }else if(resultado < 25){
+                } else if (resultado < 25) {
                     status = "Peso Ideal";
-                }else if(resultado < 30){
+                } else if (resultado < 30) {
                     status = "Pré-Obesidade";
-                }else if(resultado < 35){
+                } else if (resultado < 35) {
                     status = "Obesidade Grau 1";
-                }else if(resultado < 40){
+                } else if (resultado < 40) {
                     status = "Obesidade Grau 2";
-                }else if(resultado < 900){
+                } else if (resultado < 900) {
                     status = "Obesidade Grau 2";
-                }else{
+                } else {
                     status = "Insira Um Valor Para Calcular o";
                 }
 
                 document.getElementById("resultado").innerHTML = (`${status}, imc ${resultado.toFixed(2)}`);
             }
+
             function limpar() {
                 document.getElementById("n1").value = "";
                 document.getElementById("n2").value = "";
