@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lanchonete</title>
+        <link rel="stylesheet" href="../style.css">
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+            crossorigin="anonymous">
+    </script>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+            crossorigin="anonymous">
+    </head>
+
+    <body>
+        <header>
+             <nav class="navbar navbar-light bg-dark sombreamento">
+            <a class="navbar-brand text-warning" href="../index.html">Home</a>
+        </nav>
+        </header>
+        <main class="fundo">
+            <form class="form bg-dark">
+                <div class="row">
+                    <div class="col-3">
+                    </div>
+                    <div class="col-6">
+                        <div class="m-3">
+                            <div class="card"
+                                font-size: 20px;">
+                                <div class="card-body row">
+                                    <h1 class="card-title text-warning ">Bem
+                                        vindos!</h1>
+                                    <!-- salgados -->
+                                    <div class="card p-3">
+                                        <div class="row">
+                                            <h4 class="col-5 ">Salgados</h4>
+                                            <h4 class="col-3 ">Sabor</h4>
+                                            <h4 class="col-2 ">Valor</h4>
+                                            <h4 class="col-2">Qt</h4>
+                                        </div>
+                                        <section>
+                                            <div class="row">
+                                                <span
+                                                    class="card-title col-5">Pastel</span>
+                                                <select name id class="col-3">
+                                                    <option>Queijo</option>
+                                                    <option>Carne</option>
+                                                    <option>Presunto</option>
+                                                    <option>Peru</option>
+                                                    <option>Frango</option>
+                                                    <option disabled selected>Selecione</option>
+                                                </select>
+                                                <span
+                                                    class="card-title col-2">$
+                                                    8,00
+                                                </span>
+                                                <input size="1" id="pastel"
+                                                    name="Pastel"
+                                                    placeholder="0"
+                                                    class="btn bg-light col-1"
+                                                    type="number" />
+                                            </div>
+                                            <div class="row">
+                                                <span
+                                                    class="card-title col-5">Empada</span>
+                                                <select name id class="col-3">
+                                                    <option>Queijo</option>
+                                                    <option>Carne</option>
+                                                    <option>Presunto</option>
+                                                    <option>Peru</option>
+                                                    <option>Frango</option>
+                                                    <option disabled selected>Selecione</option>
+                                                </select>
+                                                <span
+                                                    class="card-title col-2">$
+                                                    8,00
+                                                </span>
+                                                <input size="1" id="empada"
+                                                    name="Empada"
+                                                    placeholder="0"
+                                                    class="btn bg-light col-1"
+                                                    type="number" />
+                                            </div>
+                                            <div class="row">
+                                                <span
+                                                    class="card-title col-5">Croassant</span>
+                                                <select name id class="col-3">
+                                                    <option>Queijo</option>
+                                                    <option>Carne</option>
+                                                    <option>Presunto</option>
+                                                    <option>Peru</option>
+                                                    <option>Frango</option>
+                                                    <option disabled selected>Selecione</option>
+                                                </select>
+                                                <span
+                                                    class="card-title col-2">$
+                                                    8,00
+                                                </span>
+                                                <input size="1" id="croassant"
+                                                    name="Croassant"
+                                                    placeholder="0"
+                                                    class="btn bg-light col-1"
+                                                    type="number" />
+                                            </div>
+                                            <div class="row">
+                                                <span
+                                                    class="card-title col-5">Quibe</span>
+                                                <select name id class="col-3">
+                                                    <option>Queijo</option>
+                                                    <option>Carne</option>
+                                                    <option>Presunto</option>
+                                                    <option>Peru</option>
+                                                    <option>Frango</option>
+                                                    <option disabled selected>Selecione</option>
+                                                </select>
+                                                <span
+                                                    class="card-title col-2">$
+                                                    8,00
+                                                </span>
+                                                <input size="1" id="quibe"
+                                                    name="Quibe" placeholder="0"
+                                                    class="btn bg-light col-1"
+                                                    type="number" />
+                                            </div>
+                                            <div class="row">
+                                                <span
+                                                    class="card-title col-5">Pão
+                                                    Recheado</span>
+                                                <select name id class="col-3">
+                                                    <option>Queijo</option>
+                                                    <option>Carne</option>
+                                                    <option>Presunto</option>
+                                                    <option>Peru</option>
+                                                    <option>Frango</option>
+                                                    <option disabled selected>Selecione</option>
+                                                </select>
+                                                <span
+                                                    class="card-title col-2">$
+                                                    8,00
+                                                </span>
+                                                <input size="1" placeholder="0"
+                                                    id="paoRecheado"
+                                                    name="Pão Recheado"
+                                                    placeholder="0"
+                                                    class="btn bg-light col-1"
+                                                    type="number" />
+                                            </div>
+                                        </section>
+                                    </div>
+                                    <!-- SOBREMESAS -->
+                                    <div class="card p-3">
+                                        <div class="row">
+                                            <h4 class="col-5 ">Sobremesas</h4>
+                                            <h4 class="col-3 ">Sabor</h4>
+                                            <h4 class="col-2 ">Valor</h4>
+                                            <h4 class="col-2">Qt</h4>
+                                        </div>
+                                        <section>
+                                            <div class="row">
+                                                <span
+                                                    class="card-title col-5">Torta
+                                                    Fatia 200g</span>
+                                                <select name id class="col-3">
+                                                    <option>Chocolate</option>
+                                                    <option>Ninho</option>
+                                                    <option>Maracujá</option>
+                                                    <option>Limão</option>
+                                                    <option>Bem Casado</option>
+                                                    <option disabled selected>Selecione</option>
+                                                </select>
+                                                <span
+                                                    class="card-title col-2">$
+                                                    10,00
+                                                </span>
+                                                <input size="1" id="r1l"
+                                                    name="n2" placeholder="0"
+                                                    class="btn bg-light col-1"
+                                                    type="number" />
+                                            </div>
+                                            <div class="row">
+                                                <span
+                                                    class="card-title col-5">Mousse
+                                                    200g</span>
+                                                <select name id class="col-3">
+                                                    <option>Chocolate</option>
+                                                    <option>Ninho</option>
+                                                    <option>Maracujá</option>
+                                                    <option>Limão</option>
+                                                    <option>Morango</option>
+                                                    <option disabled selected>Selecione</option>
+                                                </select>
+                                                <span
+                                                    class="card-title col-2">$
+                                                    6,00
+                                                </span>
+                                                <input size="1" id="mousse"
+                                                    name="Mousse"
+                                                    placeholder="0"
+                                                    class="btn bg-light col-1"
+                                                    type="number" />
+                                            </div>
+                                            <div class="row">
+                                                <span
+                                                    class="card-title col-5">Brownie
+                                                </span>
+                                                <select name id class="col-3">
+                                                    <option>Chocolate</option>
+                                                    <option>Ninho</option>
+                                                    <option>Café</option>
+                                                    <option>Chocolate Meio
+                                                        Amargo</option>
+                                                    <option disabled selected>Selecione</option>
+                                                    <option>Bem Casado</option>
+                                                </select>
+                                                <span
+                                                    class="card-title col-2">$
+                                                    4,00
+                                                </span>
+                                                <input size="1" id="r1l"
+                                                    name="n2" placeholder="0"
+                                                    class="btn bg-light col-1"
+                                                    type="number" />
+                                            </div>
+                                            <div class="row">
+                                                <span
+                                                    class="card-title col-5">Tortelete
+                                                </span>
+                                                <select name id class="col-3">
+                                                    <option>Chocolate</option>
+                                                    <option>Ninho</option>
+                                                    <option>Maracujá</option>
+                                                    <option>Limão</option>
+                                                    <option>Bem Casado</option>
+                                                    <option disabled selected>Selecione</option>
+                                                </select>
+                                                <span
+                                                    class="card-title col-2">$
+                                                    8,00
+                                                </span>
+                                                <input size="1" id="tortelete"
+                                                    name="Tortelete"
+                                                    placeholder="0"
+                                                    class="btn bg-light col-1"
+                                                    type="number" />
+                                            </div>
+                                            <div class="row">
+                                                <span
+                                                    class="card-title col-5">
+                                                    Copo Da Felicidade 400g
+                                                </span>
+                                                <select name id class="col-3">
+                                                    <option>Chocolate</option>
+                                                    <option>Ninho</option>
+                                                    <option>Maracujá</option>
+                                                    <option>Limão</option>
+                                                    <option>Bem Casado</option>
+                                                    <option disabled selected>Selecione</option>
+                                                </select>
+                                                <span
+                                                    class="card-title col-2">$
+                                                    16,00
+                                                </span>
+                                                <input size="1" placeholder="0"
+                                                    id="copoDaFelicidade"
+                                                    name="Copo Da Felicidade"
+                                                    placeholder="0"
+                                                    class="btn bg-light col-1"
+                                                    type="number" />
+                                            </div>
+                                        </section>
+                                    </div>
+                                    <!-- BEBIDAS -->
+                                    <div class="card p-3">
+                                        <div class="row">
+                                            <h4 class="col-5 ">Bebidas</h4>
+                                            <h4 class="col-3 ">Sabor</h4>
+                                            <h4 class="col-2 ">Valor</h4>
+                                            <h4 class="col-2">Qt</h4>
+                                        </div>
+                                        <section>
+                                            <div class="row">
+                                                <span
+                                                    class="card-title col-5">Suco
+                                                    Copo
+                                                    400ml</span>
+                                                <select name id class="col-3">
+                                                    <option>Cajá</option>
+                                                    <option>Limão</option>
+                                                    <option>Graviola</option>
+                                                    <option>Laranja</option>
+
+                                                    <option disabled selected>Selecione</option>
+                                                </select>
+                                                <span
+                                                    class="card-title col-2">$
+                                                    8,00
+                                                </span>
+                                                <input size="1" placeholder="0"
+                                                    id="r1l"
+                                                    name="n2"
+                                                    class="btn bg-light col-1"
+                                                    type="number" />
+                                            </div>
+                                            <div class="row">
+                                                <span
+                                                    class="card-title col-5">Suco
+                                                    Jarra
+                                                    900ml</span>
+                                                <select name id class="col-3">
+                                                    <option>Cajá</option>
+                                                    <option>Limão</option>
+                                                    <option>Graviola</option>
+                                                    <option>Laranja</option>
+
+                                                    <option disabled selected>Selecione</option>
+                                                </select>
+                                                <span
+                                                    class="card-title col-2">$
+                                                    12,00
+                                                </span>
+                                                <input size="1" placeholder="0"
+                                                    id="r1l"
+                                                    name="n2"
+                                                    class="btn bg-light col-1"
+                                                    type="number" />
+                                            </div>
+                                            <div class="row">
+                                                <span
+                                                    class="card-title col-5">Café
+                                                    300ml</span>
+                                                <select name id class="col-3">
+                                                    <option>Expresso</option>
+                                                    <option>Extra forte</option>
+                                                    <option>Capputino</option>
+                                                    <option>Café Com Leite</option>
+
+                                                    <option disabled selected>Selecione</option>
+                                                </select>
+                                                <span
+                                                    class="card-title col-2">$
+                                                    5,00
+                                                </span>
+                                                <input size="1" placeholder="0"
+                                                    id="cafe"
+                                                    name="cafe"
+                                                    class="btn bg-light col-1"
+                                                    type="number" />
+                                            </div>
+                                            <div class="row">
+                                                <span
+                                                    class="card-title col-5">Refrigerante
+                                                    250 ml</span>
+                                                <select name id class="col-3">
+                                                    <option>Sprite</option>
+                                                    <option>Fanta</option>
+                                                    <option>Coca Cola</option>
+                                                    <option>Antartica</option>
+                                                    <option disabled selected>Selecione</option>
+                                                </select>
+                                                <span
+                                                    class="card-title col-2">$
+                                                    4,00
+                                                </span>
+                                                <input size="1" placeholder="0"
+                                                    id="r250"
+                                                    name="n2"
+                                                    class="btn bg-light col-1"
+                                                    type="number" />
+                                            </div>
+                                            <div class="row">
+                                                <span
+                                                    class="card-title col-5">Refrigerante
+                                                    500 ml</span>
+                                                <select name id class="col-3">
+                                                    <option>Sprite</option>
+                                                    <option>Fanta</option>
+                                                    <option>Coca Cola</option>
+                                                    <option>Antartica</option>
+                                                    <option disabled selected>Selecione</option>
+                                                </select>
+                                                <span
+                                                    class="card-title col-2">$
+                                                    8,00
+                                                </span>
+                                                <input size="1" placeholder="0"
+                                                    id="r500"
+                                                    name="n2"
+                                                    class="btn bg-light col-1"
+                                                    type="number" />
+                                            </div>
+                                            <div class="row">
+                                                <span
+                                                    class="card-title col-5">Refrigerante
+                                                    1 L</span>
+                                                <select name id class="col-3">
+                                                    <option>Sprite</option>
+                                                    <option>Fanta</option>
+                                                    <option>Coca Cola</option>
+                                                    <option>Antartica</option>
+                                                    <option disabled selected>Selecione</option>
+                                                </select>
+                                                <span
+                                                    class="card-title col-2">$
+                                                    10,00
+                                                </span>
+                                                <input size="1" placeholder="0"
+                                                    id="r1l"
+                                                    name="n2"
+                                                    class="btn bg-light col-1"
+                                                    type="number" />
+                                            </div>
+                                            <div class="row">
+                                                <span
+                                                    class="card-title col-5">Refrigerante
+                                                    2 L</span>
+                                                <select name id class="col-3">
+                                                    <option>Sprite</option>
+                                                    <option>Fanta</option>
+                                                    <option>Coca Cola</option>
+                                                    <option>Antartica</option>
+                                                    <option disabled selected>Selecione</option>
+                                                </select>
+                                                <span
+                                                    class="card-title col-2">$
+                                                    14,00
+                                                </span>
+                                                <input size="1" placeholder="0"
+                                                    id="r1l"
+                                                    name="n2"
+                                                    class="btn bg-light col-1"
+                                                    type="number" />
+                                            </div>
+
+                                        </section>
+                                    </div>
+
+                                    <!-- observação -->
+                                    <input
+                                        class="card-text bg-light form-control"
+                                        type="text" id="n1" name="n1"
+                                        placeholder="Observação" />
+                                </div>
+                                <span for class="form-control card-text"> Valor
+                                    Total R$</span>
+                                <select class="form-select"
+                                    aria-label="Default select example">
+                                    <option selected>Selecione forma de
+                                        Pagamento</option>
+                                    <option value="dinheiro">Dinheiro</option>
+                                    <option value="pix">Pix</option>
+                                    <option value="cartao">Cartão</option>
+                                </select>
+                                <button class="btn btn-warning"
+                                    onclick="imc()">Finalizar pedido</button>
+                                <button class="btn btn-warning"
+                                    onclick="limpar()">Cancelar</button>
+                                <h2 id="resultado"></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3"></div>
+                </div>
+
+            </form>
+            <script>
+            function imc() {
+                let peso = parseFloat(document.getElementById("n1").value);
+                let altura = parseFloat(document.getElementById("n2").value);
+                let resultado = peso / (altura * altura);
+                let status;
+
+                if (resultado < 18.5) {
+                    status = "A baixo do Peso";
+                } else if (resultado < 25) {
+                    status = "Peso Ideal";
+                } else if (resultado < 30) {
+                    status = "Pré-Obesidade";
+                } else if (resultado < 35) {
+                    status = "Obesidade Grau 1";
+                } else if (resultado < 40) {
+                    status = "Obesidade Grau 2";
+                } else if (resultado < 900) {
+                    status = "Obesidade Grau 2";
+                } else {
+                    status = "Insira Um Valor Para Calcular o";
+                }
+
+                document.getElementById("resultado").innerHTML = (`${status}, imc ${resultado.toFixed(2)}`);
+            }
+
+            function limpar() {
+                document.getElementById("n1").value = "";
+                document.getElementById("n2").value = "";
+                document.getElementById("resultado").innerHTML = "";
+            }
+        </script>
+        </main>
+        <footer></footer>
+    </body>
+
+</html>

@@ -1,87 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calcule</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
-    </script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calcule</title>
+        <link rel="stylesheet" href="style.css">
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+            crossorigin="anonymous">
+        </script>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+            crossorigin="anonymous">
+    </head>
 
-<body>
-    <header>
-        <nav class="navbar navbar-light bg-light sombreamento">
-            <button onclick="changeModo()">Modo</button>
-            <a class="navbar-brand" id="mudarFrase" href="index.html">Calcule</a>
-        </nav>
-    </header>
-    <main>
-        <section class=" bg-dark">
-            <div class="row">
-                <div class="col-4">
-                </div>
-                <div class="col-4">
-                    <div class="m-3">
-                        <div class="card" style="width: 18rem;">
-                            <div class="card-body">
-                                <h5 class="card-title">Função Somar</h5>
-                                <p class="card-text">Faça calculos rapidamente com um click</p>
-                                <a href="soma.html" class="btn btn-warning">Somar</a>
-                            </div>
-                        </div>
+    <body>
+        <header>
+            <nav class="navbar sombreamento" id="mudarcor">
+                <button onclick="changeModo()">Modo</button>
+                <a class="navbar-brand" id="logo" href="index.html">Calcule</a>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <div class="row" id="fundo">
+                    <div class="col-2">
                     </div>
-                    <div class="m-3">
-                        <div class="card" style="width: 18rem;">
-                            <div class="card-body">
-                                <h5 class="card-title">Calcular IMC</h5>
-                                <p class="card-text">Faça calculos rapidamente com um click</p>
-                                <a href="imc.html" class="btn btn-warning">IMC</a>
+                    <div class="col-8">
+                        <section class="p-3">
+                            <div class="card" style="width: 18rem;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Calculadora</h5>
+                                    <p class="card-text">Faça calculos
+                                        rapidamente com um click</p>
+                                    <a href="calculadora/index.html"
+                                        class="btn btn-warning">Entrar</a>
+                                </div>
                             </div>
-                        </div>
+                        </section>
+                        <section class="p-3">
+                            <div class="card" style="width: 18rem;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Função Somar</h5>
+                                    <p class="card-text">Faça calculos
+                                        rapidamente com um click</p>
+                                    <a href="soma/index.html"
+                                        class="btn btn-warning">Somar</a>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="p-3">
+                            <div class="card" style="width: 18rem;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Calcular IMC</h5>
+                                    <p class="card-text">Faça calculos
+                                        rapidamente com um click</p>
+                                    <a href="imc/index.html"
+                                        class="btn btn-warning">IMC</a>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="p-3">
+                            <div class="card" style="width: 18rem;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Pojeto Lanchonete</h5>
+                                    <p class="card-text">Faça calculos
+                                        rapidamente com um click</p>
+                                    <a href="lanchonete/index.html"
+                                        class="btn btn-warning">Lanchonete</a>
+                                </div>
+                            </div>
+                        </section>
                     </div>
-                    <div class="m-3">
-                        <div class="card" style="width: 18rem;">
-                            <div class="card-body">
-                                <h5 class="card-title">Pojeto Lanchonete</h5>
-                                <p class="card-text">Faça calculos rapidamente com um click</p>
-                                <a href="lanchonete.html" class="btn btn-warning">Lanchonete</a>
-                            </div>
-                        </div>
+                    <div class="col-2">
+
                     </div>
                 </div>
-                <div class="col-4">
 
-                </div>
-            </div>
+            </section>
+        </main>
+        <footer>
 
-
-        </section>
-    </main>
-    <footer>
-        
-    </footer>
-    <script>
+        </footer>
+        <script>
         function changeModo() {
-            const frase = document.getElementById('mudarFrase');;
-            if (image.src.match("img/lampadadesligada.png")) {
-                cores.style.color = "white";
-                cores.style.color = "grey";
-                frase.textContent = "Ops, quebrou, Clique para trocar";
+            const cores = document.getElementById('mudarcor');
+            const logo = document.getElementById('logo');
+            const fundo = document.getElementById('fundo');
+            if (cores.style.backgroundColor === "yellow") {
+                cores.style.backgroundColor = "black";
+                logo.style.color = "white";
+                fundo.style.backgroundColor = "black";
 
-            } else if (image.src.match("img/lampadaquebrada.png")) {
-                frase.textContent = "Clique para apagar";
+
+                // frase.textContent = "Ops, quebrou, Clique para trocar";
+
+            } else if (cores.style.backgroundColor === "black") {
+                cores.style.backgroundColor = "white";
+                logo.style.color = "black";
+                fundo.style.backgroundColor = "white";
 
             } else {
-                frase.textContent = "Clique para acender";
+                cores.style.backgroundColor = "yellow"
+                fundo.style.backgroundColor = "grey"
             }
         }
     </script>
-</body>
+    </body>
 
 </html>
