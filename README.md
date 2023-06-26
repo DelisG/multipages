@@ -37,13 +37,13 @@ Para executar o projeto localmente, siga as instruções abaixo:
 
 ## Recursos Utilizados
 
-- Linguagens de Marcação, Estilização e Programação: HTML, CSS, JavaScript.
+- Linguagens de Marcação, Estilização e Programação: [HTML](https://developer.mozilla.org/pt-BR/docs/Web/html), [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS), [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/javascript).
 - Frameworks: [Bootstrap](https://www.bootstraptoggle.com/).
 - Ferramentas: [Vs Code](https://code.visualstudio.com/).
 
 ## Contato
 
-Se você tiver alguma dúvida, sugestão ou quiser apenas bater um papo sobre o projeto, sinta-se à vontade para entrar em contato comigo através do [e-mail](delisgmarques@gmail.com).
+Se você tiver alguma dúvida, sugestão ou quiser apenas bater um papo sobre o projeto, sinta-se à vontade para entrar em contato comigo através do e-mail `delisgmarques@gmail.com`.
 
 Agradeço antecipadamente por sua contribuição e apoio!
 
