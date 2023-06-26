@@ -20,13 +20,18 @@
     </head>
 
     <body>
-        <header>
-             <nav class="navbar navbar-light bg-dark sombreamento">
-            <a class="navbar-brand text-warning" href="../index.html">Home</a>
-        </nav>
+         <header>
+            <div class="navbar sombreamento" id="nav">
+                <div class="form-check form-switch">
+                    <label id="frase"></label>
+                    <input class="form-check-input" type="checkbox"
+                        role="switch" id="check" checked>
+                </div>
+                <a class="navbar-brand sombreamento" id="logo" href="../index.html">Home</a>
+            </div>
         </header>
-        <main class="fundo">
-            <form class="form bg-dark">
+        <main id="fundo">
+            <form class="form">
                 <div class="row">
                     <div class="col-3">
                     </div>
@@ -34,7 +39,7 @@
                         <div class="m-3">
                             <div class="card"
                                 font-size: 20px;">
-                                <div class="card-body row">
+                                <div class="card-body row itens">
                                     <h1 class="card-title text-warning ">Bem
                                         vindos!</h1>
                                     <!-- salgados -->
@@ -469,38 +474,7 @@
                 </div>
 
             </form>
-            <script>
-            function imc() {
-                let peso = parseFloat(document.getElementById("n1").value);
-                let altura = parseFloat(document.getElementById("n2").value);
-                let resultado = peso / (altura * altura);
-                let status;
-
-                if (resultado < 18.5) {
-                    status = "A baixo do Peso";
-                } else if (resultado < 25) {
-                    status = "Peso Ideal";
-                } else if (resultado < 30) {
-                    status = "Pré-Obesidade";
-                } else if (resultado < 35) {
-                    status = "Obesidade Grau 1";
-                } else if (resultado < 40) {
-                    status = "Obesidade Grau 2";
-                } else if (resultado < 900) {
-                    status = "Obesidade Grau 2";
-                } else {
-                    status = "Insira Um Valor Para Calcular o";
-                }
-
-                document.getElementById("resultado").innerHTML = (`${status}, imc ${resultado.toFixed(2)}`);
-            }
-
-            function limpar() {
-                document.getElementById("n1").value = "";
-                document.getElementById("n2").value = "";
-                document.getElementById("resultado").innerHTML = "";
-            }
-        </script>
+            <script src="../index.js"></script>
         </main>
         <footer></footer>
     </body>

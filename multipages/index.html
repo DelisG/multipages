@@ -17,16 +17,21 @@
             rel="stylesheet"
             integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
             crossorigin="anonymous">
+
     </head>
 
     <body>
         <header>
-            <nav class="navbar sombreamento" id="mudarcor">
-                <button onclick="changeModo()">Modo</button>
-                <a class="navbar-brand" id="logo" href="index.html">Calcule</a>
-            </nav>
+            <div class="navbar sombreamento" id="nav">
+                <div class="form-check form-switch">
+                    <label  id="frase"></label>
+                    <input class="form-check-input" type="checkbox"
+                        role="switch" id="check" checked>
+                </div>
+                <a class="navbar-brand sombreamento" id="logo" href="index.html">Calcule</a>
+            </div>
         </header>
-        <main>
+        <main id="fundo">
             <section>
                 <div class="row" id="fundo">
                     <div class="col-2">
@@ -86,31 +91,9 @@
         </main>
         <footer>
 
+        <script src="index.js">
+        </script>
         </footer>
-        <script>
-        function changeModo() {
-            const cores = document.getElementById('mudarcor');
-            const logo = document.getElementById('logo');
-            const fundo = document.getElementById('fundo');
-            if (cores.style.backgroundColor === "yellow") {
-                cores.style.backgroundColor = "black";
-                logo.style.color = "white";
-                fundo.style.backgroundColor = "black";
-
-
-                // frase.textContent = "Ops, quebrou, Clique para trocar";
-
-            } else if (cores.style.backgroundColor === "black") {
-                cores.style.backgroundColor = "white";
-                logo.style.color = "black";
-                fundo.style.backgroundColor = "white";
-
-            } else {
-                cores.style.backgroundColor = "yellow"
-                fundo.style.backgroundColor = "grey"
-            }
-        }
-    </script>
     </body>
 
 </html>
